@@ -2,7 +2,7 @@
 
 Un'applicazione Vue.js interattiva per personalizzare bottiglie riutilizzabili del brand Sunnee, pensata per bambini e famiglie con un forte messaggio ecologico.
 
-## ✨ Caratteristiche
+## Caratteristiche
 
 - **Configurazione interattiva**: 3 step guidati per personalizzare tappo, corpo e fondo della borraccia
 - **Anteprima in tempo reale**: Visualizzazione dinamica della borraccia che si aggiorna ad ogni scelta
@@ -11,7 +11,7 @@ Un'applicazione Vue.js interattiva per personalizzare bottiglie riutilizzabili d
 - **Responsive design**: Ottimizzato per desktop, tablet e mobile
 - **30 colori unici**: 10 colori per ogni parte della borraccia con nomi creativi
 
-## 🏗️ Struttura del Progetto
+## Struttura del Progetto
 
 ```
 sunnee/
@@ -31,7 +31,7 @@ sunnee/
 └── index.html
 ```
 
-## 🚀 Setup e Installazione
+## Setup e Installazione
 
 ### Prerequisiti
 - Node.js (versione 16 o superiore)
