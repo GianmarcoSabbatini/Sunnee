@@ -1,0 +1,29 @@
+{
+  "name": "sunnee-bottle-configurator",
+  "version": "1.0.0",
+  "description": "Configuratore interattivo di bottiglie personalizzabili Sunnee Kids",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "serve": "vite preview --port 4173"
+  },
+  "dependencies": {
+    "vue": "^3.3.4",
+    "vue-router": "^4.2.4"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.2.3",
+    "vite": "^4.4.5"
+  },
+  "keywords": [
+    "vue",
+    "configurator",
+    "bottles",
+    "kids",
+    "sunnee"
+  ],
+  "author": "Sunnee",
+  "license": "MIT"
+}
