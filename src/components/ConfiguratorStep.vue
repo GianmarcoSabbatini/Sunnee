@@ -33,7 +33,6 @@
                 class="color-circle"
                 :style="{ background: color.gradient }"
               >
-                <div class="color-shine"></div>
                 <div class="selection-check" v-if="isSelected(color)">✓</div>
               </div>
               <span class="color-name">{{ color.name }}</span>
@@ -272,8 +271,6 @@ export default {
 .color-option.selected {
   background: rgba(255, 255, 255, 0.9);
   border-color: #FF7043;
-  transform: translateY(-3px);
-  box-shadow: 0 8px 25px rgba(255, 112, 67, 0.2);
 }
 
 .color-circle {
@@ -283,26 +280,9 @@ export default {
   margin: 0 auto 10px;
   position: relative;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-  transition: all 0.3s ease;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.color-option:hover .color-circle {
-  transform: scale(1.1);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
-}
-
-.color-shine {
-  position: absolute;
-  top: 8px;
-  left: 15px;
-  width: 12px;
-  height: 18px;
-  background: rgba(255, 255, 255, 0.4);
-  border-radius: 50%;
-  filter: blur(2px);
 }
 
 .selection-check {
@@ -310,7 +290,6 @@ export default {
   font-size: 1.5rem;
   font-weight: bold;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-  animation: checkPop 0.3s ease;
 }
 
 .color-name {
@@ -349,24 +328,19 @@ export default {
 .nav-btn.secondary:hover {
   background: #6c757d;
   color: white;
-  transform: translateY(-2px);
 }
 
 .nav-btn.primary {
   background: linear-gradient(135deg, #FF7043, #FF5722);
   color: white;
-  box-shadow: 0 4px 15px rgba(255, 112, 67, 0.3);
 }
 
 .nav-btn.primary:hover {
   background: linear-gradient(135deg, #FF5722, #E53935);
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(255, 112, 67, 0.4);
 }
 
 .nav-btn.final-step {
   background: linear-gradient(135deg, #4CAF50, #388E3C);
-  box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3);
 }
 
 .nav-btn.final-step:hover {
@@ -428,59 +402,30 @@ export default {
   width: 24px;
   height: 24px;
   border-radius: 50%;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
 .selected-color-name {
   color: #FF7043;
   font-weight: 600;
-  font-size: 0.9rem;
-}
-
-@keyframes checkPop {
-  0% { transform: scale(0); }
-  50% { transform: scale(1.2); }
-  100% { transform: scale(1); }
 }
 
 @media (max-width: 1024px) {
   .step-layout {
     grid-template-columns: 1fr;
-    gap: 30px;
-  }
-  
-  .preview-panel {
-    position: static;
   }
 }
 
 @media (max-width: 768px) {
-  .selection-panel,
-  .preview-panel {
-    padding: 20px;
-  }
-  
   .step-title {
     font-size: 1.8rem;
   }
   
   .colors-grid {
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    gap: 15px;
-  }
-  
-  .color-circle {
-    width: 60px;
-    height: 60px;
   }
   
   .navigation-buttons {
     flex-direction: column;
-  }
-  
-  .nav-btn {
-    padding: 12px 20px;
-    font-size: 1rem;
   }
 }
 </style>

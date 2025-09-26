@@ -104,7 +104,6 @@ export default {
   filter: drop-shadow(0 25px 50px rgba(0, 0, 0, 0.2));
 }
 
-
 .bottle-cap {
   width: 60px;
   height: 40px;
@@ -135,8 +134,6 @@ export default {
   border-radius: 0 0 8px 8px;
 }
 
-
-
 .bottle-body {
   width: 100px;
   height: 250px;
@@ -158,7 +155,6 @@ export default {
   filter: blur(2px);
 }
 
-
 .body-shadow {
   position: absolute;
   bottom: 10px;
@@ -169,7 +165,6 @@ export default {
   border-radius: 4px;
   filter: blur(3px);
 }
-
 
 .bottle-bottom {
   width: 100px;
@@ -202,7 +197,6 @@ export default {
   border-radius: 0 0 15px 15px;
   filter: blur(2px);
 }
-
 
 .bottle-shine {
   position: absolute;
