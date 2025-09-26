@@ -40,7 +40,7 @@ sunnee/
 ### Installazione
 ```bash
 # Clona il repository
-git clone <repository-url>
+git clone <https://github.com/GianmarcoSabbatini/Sunnee>
 cd sunnee
 
 # Installa le dipendenze
